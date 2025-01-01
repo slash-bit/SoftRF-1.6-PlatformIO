@@ -1,0 +1,259 @@
+********************************************************************************
+If you like PlatformIO, please:
+- star it on GitHub > https://github.com/platformio/platformio-core
+- follow us on LinkedIn to stay up-to-date on the latest project news > https://www.linkedin.com/company/platformio/
+- try PlatformIO IDE for embedded development > https://platformio.org/platformio-ide
+********************************************************************************
+
+Processing tracker-t1000-e (platform: platformio/nordicnrf52@^10.7.0; board: tracker-t1000-e; framework: arduino)
+--------------------------------------------------------------------------------
+Platform Manager: Installing platformio/nordicnrf52 @ ^10.7.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Platform Manager: nordicnrf52@10.7.0 has been installed!
+Tool Manager: Installing platformio/toolchain-gccarmnoneeabi @ >=1.60301.0,<1.80000.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: toolchain-gccarmnoneeabi@1.70201.0 has been installed!
+Tool Manager: Installing platformio/framework-arduinoadafruitnrf52 @ ~1.10601.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-arduinoadafruitnrf52@1.10601.0 has been installed!
+Tool Manager: Installing platformio/framework-cmsis @ ~2.50700.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-cmsis@2.50700.210515 has been installed!
+Tool Manager: Installing platformio/tool-adafruit-nrfutil @ ~1.503.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-adafruit-nrfutil@1.503.0 has been installed!
+Tool Manager: Installing platformio/tool-sreccat @ ~1.164.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20%
+Tool Manager: tool-sreccat@1.164.0 has been installed!
+Tool Manager: Installing platformio/tool-scons @ ~4.40502.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-scons@4.40502.0 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/nordicnrf52/tracker-t1000-e.html
+PLATFORM: Nordic nRF52 (10.7.0) > Seeed T1000-E
+HARDWARE: NRF52840 64MHz, 243KB RAM, 796KB Flash
+DEBUG: Current (jlink) External (blackmagic, cmsis-dap, jlink, stlink)
+PACKAGES: 
+ - framework-arduinoadafruitnrf52 @ 1.10601.0 (1.6.1) 
+ - framework-cmsis @ 2.50700.210515 (5.7.0) 
+ - tool-adafruit-nrfutil @ 1.503.0 (5.3) 
+ - tool-sreccat @ 1.164.0 (1.64) 
+ - toolchain-gccarmnoneeabi @ 1.70201.0 (7.2.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 100 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- SPI @ 1.0
+|-- Basicmac LoRaWAN stack @ 2.1.0
+|-- IBM LMIC framework @ 1.5.0+arduino-1
+|-- Adafruit BME680 Library @ 2.0.4
+|-- Adafruit BMP085 Library @ 1.0.0
+|-- Adafruit BMP280 Library @ 1.0.2
+|-- Adafruit MPL3115A2 Library @ 1.1.0
+|-- SensorLib @ 0.2.0
+|-- TinyGPSPlus @ 1.0.0
+|-- Adafruit GFX Library @ 1.4.2
+|-- Time
+|-- Geoid
+|-- Wire @ 1.0
+|-- EasyLink @ 1.0.5
+|-- dump978 @ 1.0
+|-- OGN
+|-- LibAPRS_ESP32
+|-- SA818 @ 1.0.0
+|-- AceButton @ 1.3.3
+|-- Adafruit SleepyDog Library @ 1.6.3
+|-- WinkelICT ADXL362 @ 1.3.0
+|-- SCSerial @ 1.0
+|-- SPIFlash
+|-- uCDB @ 0.5.5
+|-- Adafruit SPIFlash @ 4.1.1
+|-- Adafruit TinyUSB Library
+|-- SdFat - Adafruit Fork @ 2.2.1
+|-- SoftSPI
+|-- ESP8266Audio @ 1.9.7
+|-- MPU9250 @ 0.4.8
+|-- TFT_eSPI @ 2.4.61
+|-- XPowersLib @ 0.1.4
+|-- AXP202X_Library @ 1.1.3
+|-- ADC
+|-- USB_Host_CDC_ACM @ 1.0
+|-- flashrom
+|-- libmodes @ 1.0
+|-- PCF8563_Library @ 1.0.0
+|-- ESP8266TrueRandom
+|-- ArduinoGraphics @ 1.1.2
+|-- Pico PIO USB @ 0.5.3
+|-- RP2040_Sleep
+|-- SimpleNetwork @ 0.99
+|-- ArduinoJson @ 5.13.3
+|-- aircraft
+|-- ArduinoSTL @ 1.3.3
+|-- USB Host Library SAMD @ 2.0.0
+|-- SparkFun 9DoF IMU Breakout - ICM 20948 - Arduino Library @ 1.2.5
+|-- Adafruit Little File System Libraries @ 0.11.0
+|-- Bluefruit52_BLEUart_HM10
+|-- Adafruit Internal File System on Bluefruit nRF52 @ 0.11.0
+|-- MIDI Library @ 4.3.1
+|-- Adafruit Bluefruit nRF52 Libraries
+|-- QMA6100P @ 0.0.1
+|-- adsb_encoder
+|-- CRC
+|-- NMEA library @ 3.0.0+arduino
+|-- id_open @ 1.2
+|-- FlightRecorder @ 1.0
+|-- U8g2_for_Adafruit_GFX @ 1.8.0
+|-- jQuery
+|-- WiFiWebServer @ 1.10.1
+|-- arduino-NVM @ 0.9.1
+|-- EEPROM @ 1.1
+|-- FlashStorage @ 1.0.0
+|-- RadioLib @ 7.1.0
+|-- nRF905 @ 2.0
+|-- WiFi101 @ 0.16.1+sha.a1233c2
+|-- GxEPD2 @ 1.2.4
+|-- U8g2 @ 2.21.8
+|-- mavlink
+|-- Adafruit NeoPixel @ 1.1.6
+|-- WS2812 @ 1.0.0
+|-- WiFiEspAT @ 2.0.0
+|-- ESP8266FtpServer @ 1.0.1
+|-- Exp_EspSoftwareSerial @ 3.4.1
+|-- SoftwareSerial @ 1.0.0
+Building in release mode
+Compiling .pio/build/tracker-t1000-e/lib73a/Adafruit_TinyUSB_Arduino/arduino/Adafruit_TinyUSB_API.cpp.o
+Compiling .pio/build/tracker-t1000-e/lib73a/Adafruit_TinyUSB_Arduino/arduino/Adafruit_USBD_CDC.cpp.o
+Compiling .pio/build/tracker-t1000-e/lib73a/Adafruit_TinyUSB_Arduino/arduino/Adafruit_USBD_Device.cpp.o
+Compiling .pio/build/tracker-t1000-e/lib73a/Adafruit_TinyUSB_Arduino/arduino/Adafruit_USBD_Interface.cpp.o
+
+Processing T-Beam-S3Core (board: tbeam-s3-core; platform: espressif32 @ 6.7.0; framework: arduino)
+--------------------------------------------------------------------------------
+Platform Manager: Installing espressif32 @ 6.7.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Platform Manager: espressif32@6.7.0 has been installed!
+Tool Manager: Installing espressif/toolchain-xtensa-esp32s3 @ 8.4.0+2021r2-patch5
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: toolchain-xtensa-esp32s3@8.4.0+2021r2-patch5 has been installed!
+Tool Manager: Installing espressif/toolchain-riscv32-esp @ 8.4.0+2021r2-patch5
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: toolchain-riscv32-esp@8.4.0+2021r2-patch5 has been installed!
+Tool Manager: Installing platformio/framework-arduinoespressif32 @ ~3.20016.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-arduinoespressif32@3.20016.0 has been installed!
+Tool Manager: Installing platformio/tool-esptoolpy @ ~1.40501.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-esptoolpy@1.40501.0 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/tbeam-s3-core.html
+PLATFORM: Espressif 32 (6.7.0) > LilyGo TBeam-S3-Core
+HARDWARE: ESP32S3 240MHz, 320KB RAM, 8MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-builtin, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20016.0 (2.0.16) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-riscv32-esp @ 8.4.0+2021r2-patch5 
+ - toolchain-xtensa-esp32s3 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 121 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NeoPixelBus @ 2.8.3
+|-- SPI @ 2.0.0
+|-- Basicmac LoRaWAN stack @ 2.1.0
+|-- IBM LMIC framework @ 1.5.0+arduino-1
+|-- Adafruit BME680 Library @ 2.0.4
+|-- Adafruit BMP085 Library @ 1.0.0
+|-- Adafruit BMP280 Library @ 1.0.2
+|-- Adafruit MPL3115A2 Library @ 1.1.0
+|-- SensorLib @ 0.2.0
+|-- TinyGPSPlus @ 1.0.0
+|-- Adafruit GFX Library @ 1.4.2
+|-- Time
+|-- Geoid
+|-- Wire @ 2.0.0
+|-- DNSServer @ 2.0.0
+|-- EasyLink @ 1.0.5
+|-- dump978 @ 1.0
+|-- OGN
+|-- LibAPRS_ESP32
+|-- SA818 @ 1.0.0
+|-- AceButton @ 1.3.3
+|-- Adafruit SleepyDog Library @ 1.6.3
+|-- WinkelICT ADXL362 @ 1.3.0
+|-- SCSerial @ 1.0
+|-- SPIFlash
+|-- uCDB @ 0.5.5
+|-- Adafruit SPIFlash @ 4.1.1
+|-- SdFat - Adafruit Fork @ 2.2.1
+|-- SoftSPI
+|-- ESP8266Audio @ 1.9.7
+|-- ESP32 BLE Arduino @ 2.0.0
+|-- MPU9250 @ 0.4.8
+|-- TFT_eSPI @ 2.4.61
+|-- XPowersLib @ 0.1.4
+|-- AXP202X_Library @ 1.1.3
+|-- ADC
+|-- USB_Host_CDC_ACM @ 1.0
+|-- flashrom
+|-- libmodes @ 1.0
+|-- PCF8563_Library @ 1.0.0
+|-- ESP8266TrueRandom
+|-- ArduinoGraphics @ 1.1.2
+|-- Pico PIO USB @ 0.5.3
+|-- RP2040_Sleep
+|-- SimpleNetwork @ 0.99
+|-- ArduinoJson @ 5.13.3
+|-- aircraft
+|-- ArduinoSTL @ 1.3.3
+|-- USB Host Library SAMD @ 2.0.0
+|-- SparkFun 9DoF IMU Breakout - ICM 20948 - Arduino Library @ 1.2.5
+|-- BluetoothSerial @ 2.0.0
+|-- Bluefruit52_BLEUart_HM10
+|-- MIDI Library @ 4.3.1
+|-- QMA6100P @ 0.0.1
+|-- adsb_encoder
+|-- CRC
+|-- NMEA library @ 3.0.0+arduino
+|-- id_open @ 1.2
+|-- ArduinoOTA @ 2.0.0
+|-- FlightRecorder @ 1.0
+|-- U8g2_for_Adafruit_GFX @ 1.8.0
+|-- jQuery
+|-- WebServer @ 2.0.0
+|-- WiFiWebServer @ 1.10.1
+|-- arduino-NVM @ 0.9.1
+|-- EEPROM @ 1.1
+|-- FlashStorage @ 1.0.0
+|-- RadioLib @ 7.1.0
+|-- nRF905 @ 2.0
+|-- WiFi101 @ 0.16.1+sha.a1233c2
+|-- GxEPD2 @ 1.2.4
+|-- U8g2 @ 2.21.8
+|-- mavlink
+|-- Adafruit NeoPixel @ 1.1.6
+|-- WS2812 @ 1.0.0
+|-- ESPmDNS @ 2.0.0
+|-- Update @ 2.0.0
+|-- WiFiEspAT @ 2.0.0
+|-- ESP8266FtpServer @ 1.0.1
+|-- Exp_EspSoftwareSerial @ 3.4.1
+Building in release mode
+Compiling .pio/build/T-Beam-S3Core/src/Library.cpp.o
+Compiling .pio/build/T-Beam-S3Core/src/TTNHelper.cpp.o
+Compiling .pio/build/T-Beam-S3Core/src/TrafficHelper.cpp.o
+Compiling .pio/build/T-Beam-S3Core/src/driver/Baro.cpp.o
+
